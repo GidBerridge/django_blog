@@ -1,6 +1,9 @@
 #welcome {
-    background: linear-gradient(to right top, #82f982, #05bc2d);
+    background-color: #2a2a2a;
     padding: 6rem 12%;
+    color: #eeb14e;
+    font-weight: 200;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
 }
 
 #welcome header {
@@ -15,21 +18,20 @@
     object-fit: cover;
     object-position: top;
     border: 5px solid white;
-    border-radius: 12px;
+    border-radius: 50%;
     background-color: #ffe1bf;
-    transform: rotateZ(-5deg);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
 
 #welcome h2 {
     font-size: 3.5rem;
     margin: 0 0 0 2rem;
-    color: #e4e4e4;
-    width: 10rem;
+    font-weight: 200;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+
 }
 
 #welcome p {
-    color: white;
     font-size: 1.5rem;
 }
 
@@ -61,8 +63,9 @@
 #about {
     text-align: center;
     padding: 3rem;
-    background-color: #e48900;
+    background-color: #eeb14e;
     margin-top: 5rem;
+    color: #2a2a2a;
 }
 
 #about h2 {
@@ -71,5 +74,5 @@
 
 #about p {
     font-size: 1.5rem;
-    color: #353535;
+
 }
