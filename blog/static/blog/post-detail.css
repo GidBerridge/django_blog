@@ -1,11 +1,8 @@
 body {
-    background-color: #e7e7e7;
+    background-color: #2a2a2a;
 }
 
-#main-navigation {
-    background-color: #390281;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-}
+
 
 #summary {
     margin: 8rem auto 3rem auto;
@@ -13,7 +10,7 @@ body {
     width: 90%;
     max-width: 90rem;
     border-radius: 16px;
-    background-color: #5706c0;
+    background-color: #eeb14e;
     position: relative;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
     height: 22rem;
@@ -39,14 +36,13 @@ body {
 #summary article img {
     width: 12rem;
     height: 12rem;
-    border-radius: 12px;
-    transform: rotateZ(5deg);
+    border-radius: 50%;
     border: 5px solid white;
     margin-bottom: 1rem;
 }
 
 #summary address {
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 #summary a {
@@ -54,8 +50,12 @@ body {
     text-decoration: none;
 }
 
+#summary a:hover {
+    color: #2a2a2a;
+}
+
 #summary time {
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 main {
@@ -70,7 +70,7 @@ main {
 
 .tag {
     background-color: #fff;
-    color: #5706c0;
+    color: #2a2a2a;
     padding: 0.5rem;
     border-radius: 8px;
 
