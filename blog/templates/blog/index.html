@@ -15,13 +15,13 @@
     <section id="welcome">
         <header>
             <img src="{% static "blog/images/profile_pic.jpg"%}" alt="Gid - The author of this blog">
-            <h2>Gid's Blog</h2>
+            <h2 class="mt-5">Tech Blog</h2>
         </header>
-        <p>Hi I am Gid. This is my blog</p>
+        <p></p>
     </section>
 
     <section id="latest-posts">
-        <h2>Latest Posts</h2>
+        <h2 class="mb-3">Latest Posts</h2>
         <ul>
             {% for post in posts  %}
                 {% include "blog/includes/post.html" %}
@@ -31,7 +31,7 @@
 
     <section id="about">
         <h2>What I do</h2>
-        <p>I love programming and music. Ideally both at the same time.</p>
-        <p>My goal is to keep on growing as a dev and be a better musician.</p>
+        <p>I love programming for the web.</p>
+        <p>My goal is to improve my skills at Django, Rails and JavaScript.</p>
     </section>
 {% endblock  %}

@@ -1,10 +1,10 @@
 body {
-    background-color: #e7e7e7;
+    /* background-color: #2a2a2a; */
 }
 
 #main-navigation {
-    background-color: #390281;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    background-color: #2a2a2a;
+    /* box-shadow: 0 2px 8px rgba(238, 177, 78, 1); */
 }
 
 #all-posts {

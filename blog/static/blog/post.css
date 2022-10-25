@@ -5,6 +5,13 @@
     text-align: center;
 }
 
+.post__content {
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+}
+
 .post a {
     text-decoration: none;
     color: black;
@@ -15,7 +22,8 @@
 .post a:hover,
 .post a:active {
     transform: scale(1.1);
-    background-color: #390281;
+    background-color: #eeb14e;
+    ;
     color: white;
 }
 
