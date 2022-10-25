@@ -4,7 +4,7 @@ from tkinter import image_names
 # from msilib.schema import PublishComponent
 from wsgiref.validate import validator
 from django.db import models
-from django.core.validators import MinValueValidator, MaxValueValidator
+from django.core.validators import MinLengthValidator
 from django.urls import reverse
 from django.utils.text import slugify
 
@@ -14,17 +14,20 @@ from django.utils.text import slugify
 class Tag(models.Model):
     caption = models.CharField(max_length=20)
 
+    def __str__(self):
+        return self.caption
+
 
 class Author(models.Model):
     first_name = models.CharField(max_length=100)
     last_name = models.CharField(max_length=100)
-    email_address = models.EmailField(max_length=100)
+    email_address = models.EmailField()
 
-    # def fullname(self):
-    #     return self.first_name + " " + self.last_name
+    def fullname(self):
+        return f"{self.first_name} {self.last_name}"
 
-    # def __str__(self):
-    #     return self.fullname()
+    def __str__(self):
+        return self.fullname()
 
 
 class Post(models.Model):
@@ -34,7 +37,7 @@ class Post(models.Model):
     date = models.DateField(auto_now=True)
     slug = models.SlugField(unique=True, db_index=True)
     content = models.TextField(
-        validators=[MinValueValidator(10)])
+        validators=[MinLengthValidator(10)])
     author = models.ForeignKey(
         Author, on_delete=models.SET_NULL, null=True, related_name="posts")
     tags = models.ManyToManyField(Tag)
