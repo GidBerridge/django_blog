@@ -4,6 +4,7 @@
     color: #eeb14e;
     font-weight: 200;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    z-index: 1;
 }
 
 #welcome header {
@@ -39,8 +40,8 @@
     background-color: white;
     padding: 2rem;
     border-radius: 12px;
-    width: 60rem;
-    margin: -6rem auto 2rem auto;
+    z-index: 100;
+    margin: -0.5rem auto -0.5rem auto;
     box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.4);
 }
 
@@ -63,9 +64,10 @@
 #about {
     text-align: center;
     padding: 3rem;
+    margin-top: -1rem;
     background-color: #eeb14e;
-    margin-top: 5rem;
     color: #2a2a2a;
+    z-index: -1;
 }
 
 #about h2 {
