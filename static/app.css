@@ -3,7 +3,9 @@
 }
 
 html {
-    font-family: 'Open Sans', 'Lato', sans-serif;
+    font-family: 'Raleway',
+        Helvetica,
+        sans-serif sans-serif !important;
 }
 
 body {
@@ -13,8 +15,8 @@ body {
 h1,
 h2,
 h3 {
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;
+    font-family: 'Raleway', Helvetica, sans-serif sans-serif;
+    font-weight: 200;
 }
 
 #main-navigation {
@@ -27,12 +29,13 @@ h3 {
     position: absolute;
     top: 0;
     left: 0;
+    font-family: 'Raleway', Helvetica, sans-serif sans-serif;
 }
 
 #main-navigation a {
     text-decoration: none;
-    color: white;
-    font-weight: bold;
+    color: #eeb14e;
+    /* font-weight: bold; */
 }
 
 #main-navigation a:hover,
