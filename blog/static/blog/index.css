@@ -1,3 +1,7 @@
+body {
+    background-color: #eeb14e;
+}
+
 #welcome {
     background-color: #2a2a2a;
     padding: 6rem 12% 4rem 12%;
@@ -52,8 +56,8 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    gap: 1rem;
+    display: inline;
+    /* gap: 1rem; */
 }
 
 #latest-posts li {
@@ -64,7 +68,7 @@
     text-align: center;
     padding: 3rem;
     margin-top: -1rem;
-    background-color: #eeb14e;
+    /* background-color: #eeb14e; */
     color: #2a2a2a;
     z-index: -1;
 }
@@ -76,4 +80,10 @@
 #about p {
     font-size: 1.5rem;
 
+}
+
+@media only screen and (min-width: 768px) {
+    #latest-posts ul {
+        display: flex;
+    }
 }
