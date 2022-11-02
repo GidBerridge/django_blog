@@ -1,6 +1,6 @@
 from email.policy import default
 from enum import unique
-from tkinter import image_names
+# from tkinter import image_names
 # from msilib.schema import PublishComponent
 from wsgiref.validate import validator
 from django.db import models
