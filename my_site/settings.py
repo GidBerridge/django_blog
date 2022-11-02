@@ -30,10 +30,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get("IS_PRODUCTION")
+DEBUG = os.environ.get("IS_DEVELOPMENT", True)
 
 ALLOWED_HOSTS = [
-    # os.environ.get("APP_HOST", "localhost")
+    os.environ.get("APP_HOST")
 ]
 
 
@@ -140,7 +140,6 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
     BASE_DIR / "static"
-
 ]
 
 MEDIA_ROOT = BASE_DIR / "uploads"
