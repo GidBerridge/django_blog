@@ -33,7 +33,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 DEBUG = os.environ.get("IS_DEVELOPMENT", True)
 
 ALLOWED_HOSTS = [
-    os.environ.get("APP_HOST")
+    os.environ.get("APP_HOST"),  "127.0.0.1"
 ]
 
 
